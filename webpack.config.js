@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js'    
   },
   module: {
     rules: [
@@ -38,7 +38,7 @@ module.exports = {
     open: true,
     compress: true,
     hot: true,
-    port: 8080,
+    port: 3002,
   },
   plugins: [
     new HtmlWebpackPlugin({
