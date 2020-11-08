@@ -26,3 +26,7 @@
         max-width: calc(100% - 22px * 2);
     } 
   }
+
+  .error{
+    outline: 3px solid darkred;
+  }
