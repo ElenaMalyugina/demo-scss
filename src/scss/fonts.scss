@@ -1,0 +1,11 @@
+$path-to-fonts: '/assets/fonts/';
+
+@font-face { 
+    font-family: "Montserrat";
+    src: url($path-to-fonts + 'Montserrat-regular.ttf') format("truetype");
+  }
+  
+@font-face { 
+    font-family: "MontserratBold";
+    src: url($path-to-fonts  + 'Montserrat-semibold.ttf') format("truetype");
+}

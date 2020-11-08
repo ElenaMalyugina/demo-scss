@@ -1,0 +1,39 @@
+$path-to-sprite: '/assets/icons/css_sprites.png';
+
+.bg-data_science {    
+    width: 36px; 
+    height: 36px;
+    background: url($path-to-sprite) -130px -10px;
+  }
+  
+  .bg-ba_excel {
+    width: 40px; 
+    height: 38px;
+    background: url($path-to-sprite) -70px -10px;
+  }
+  
+  .bg-graphic {
+    width: 36px; 
+    height: 34px;
+    background: url($path-to-sprite) -130px -66px;
+  }
+  
+  .bg-managment {
+    width: 40px;
+    height: 40px;
+    background: url($path-to-sprite) -10px -10px;
+  }
+  
+  .bg-programming {
+    width: 40px; 
+    height: 37px;
+    background: url($path-to-sprite) -10px -70px;
+  }
+  
+  .bg-security {
+    width: 38px; 
+    height: 36px;
+    background: url($path-to-sprite) -70px -70px;
+  }
+  
+  

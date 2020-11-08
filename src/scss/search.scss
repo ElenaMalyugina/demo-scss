@@ -1,0 +1,127 @@
+.search{
+    background-color: $search-color-desktop;   
+  }
+  
+  .search>.container{
+    padding: 30px 0;
+  }
+  
+  @include tablets{
+    .search{
+        background-color: transparent;
+    }
+  
+    .search > .container{        
+        padding: 20px;
+        background-image: $search-color-mobile;
+    }
+  }
+  
+  .form-top{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-header{
+    margin: 0 0 20px 0;
+    font-family: MontserratBold, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+  }
+  
+  @media screen and (max-width: 540px){
+    .form-header{
+        font-size: 16px;
+    }
+  }
+  
+  .search-input{
+    width: 75%;
+    margin-right: 12px;
+    padding: 5px;
+    border: none;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+  .search-input::-webkit-input-placeholder{
+    color: #7a7a7a;
+  }
+  
+  .search-input::-moz-placeholder{
+    color: #7a7a7a;
+  }
+  
+  .search-input::placeholder{
+    color: #7a7a7a;
+  }
+  
+  @media screen and (max-width: 540px){
+    .search-input{
+        font-size: 8px;
+    }
+  }
+  
+  .search-submit{
+    width: calc(100% - 75%);
+    background-color: $button-color-desktop;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    /*margin-right: 18px;*/
+  }
+  
+  @media screen and (max-width: 1240px){
+    .search-submit{
+        background-color: $button-color-mobile;
+        border: 1px solid $menu-border-color-mobile;
+        font-size: 12px;
+        line-height: 15px;
+        /*margin-right: 21px;*/
+        padding: 12px 21px;
+    }
+  }
+  
+  @media screen and (max-width: 570px){
+    .search-submit{
+        /*margin-right: 0;*/
+        width: calc(100% - 50%);
+        padding: 10px 22px;
+    }
+  }
+  
+  @media screen and (max-width: 540px){
+    .search-submit{
+        font-size: 8px;
+    }
+  }
+  
+  .search-submit:hover{
+    text-decoration: underline;
+  }
+  
+  .advanced_search{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 17px;
+  }
+  
+  @include tablets{
+    .advanced_search{
+        display: none;
+    }
+  }
+  
+  .advanced_search:hover{
+    text-decoration: underline;
+  }

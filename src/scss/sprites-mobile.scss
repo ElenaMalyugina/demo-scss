@@ -1,0 +1,38 @@
+$path-to-sprite-mob: '/assets/icons/css_sprites_mob.png';
+
+.bg-data_science {    
+    width: 30px; 
+    height: 30px;
+    background: url($path-to-sprite-mob) -115px -10px;
+}
+
+.bg-ba_excel {
+    width: 32px; 
+    height: 30px;
+    background: url($path-to-sprite-mob) -62px -62px;
+}
+
+.bg-graphic {
+    width: 32px; 
+    height: 31px;
+    background: url($path-to-sprite-mob) -10px -62px;
+}
+
+.bg-managment {
+    width: 32px; 
+    height: 32px;
+    background: url($path-to-sprite-mob) -10px -10px;
+}
+
+.bg-programming {
+    width: 32px;
+    height: 28px;
+    background: url($path-to-sprite-mob) -10px -113px;
+}
+
+.bg-security {
+    width: 33px; 
+    height: 31px;
+    background: url($path-to-sprite-mob) -62px -10px;
+}  
+  

@@ -1,0 +1,28 @@
+*{
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  html, body{
+    min-width: $min-width;
+  }
+  
+  .container{
+    margin: 0 auto;
+    max-width: $max-width;
+    min-width: $min-width;
+  }
+  
+  @include tablets{
+    .container{
+        /*padding: 0 60px;*/
+        max-width: calc(100% - 60px * 2);
+    } 
+  }
+  
+  @include phones{
+    .container{
+        /*padding: 0 60px;*/
+        max-width: calc(100% - 22px * 2);
+    } 
+  }
