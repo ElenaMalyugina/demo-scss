@@ -2,16 +2,17 @@ import {validateNotEmpty} from './validate';
 import {sendToServer} from './sendToServer';
 import { markAsError, unmarkAsError } from './inputError';
 
-function submit(e, form, input){
+const NOT_VALID = -1;
+
+function submitSearch(e, searchString){
     e.preventDefault();
-    const searchString = input.value;
     const isValid = validateNotEmpty(searchString);
 
     if(!isValid) {
-        markAsError(input);
-        return;
+        //условный стоп-код
+        return NOT_VALID;
     }
-    
+
     const data = {
         search: searchString
     };
@@ -31,7 +32,10 @@ export default function(){
     const input = document.getElementById('search-string-js');    
 
     form.addEventListener('submit', (e)=>{
-        submit(e, form, input);
+        let isError = submitSearch(e, input.value);
+        if(isError === NOT_VALID){
+            markAsError(input);
+        }
     });
 
     input.addEventListener('focus', (e)=>{
