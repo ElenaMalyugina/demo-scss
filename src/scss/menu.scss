@@ -15,12 +15,14 @@
   
   nav{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;   
+    padding: 15px 0; 
   }
   
   @include tablets{
     nav{
         flex-wrap: wrap;
+        padding: 0;
     } 
   }
   
@@ -32,7 +34,7 @@
     text-transform: uppercase;
     line-height: 12px;
     width: 16.6%;
-    padding: 15px;
+    padding: 0 15px;
     border-right: 1px solid $menu-border-color-desktop;
   }
   
@@ -44,7 +46,8 @@
         line-height: 17px;
         box-shadow: $menu-shadow;     
         position: relative;   
-        border-right-color: transparent;        
+        border-right-color: transparent;   
+        padding: 15px;     
     }  
   
     .nav-item:before{
